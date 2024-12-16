@@ -1,6 +1,7 @@
+import { defineStore } from "pinia";
+
 import { apiRouters } from "@/constants";
 import { useApiFetch } from "@/hooks/useApiFetch";
-import { defineStore } from "pinia";
 
 export interface UsersState {
   loading: boolean;
@@ -9,7 +10,7 @@ export interface UsersState {
 }
 
 export interface UserData {
-  id: 1;
+  id: string;
   name: string;
   email: string;
   phone: string;

@@ -41,6 +41,5 @@ onMounted(() => {
   />
 
   <Loader v-if="usersStore.loading" />
-
-  <UserList :users="filteredUsers" />
+  <UserList v-else :users="filteredUsers" />
 </template>
